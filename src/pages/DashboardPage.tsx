@@ -69,7 +69,7 @@ import React, { useState } from 'react';
                   <h2 className="text-xl font-bold text-white">{it.title}</h2>
                   <p className="text-gray-400">{it.destination}</p>
                   <div className="mt-4 flex justify-between items-center">
-                    <span className="text-lg font-semibold text-purple-400">₹{it.budget.toLocaleString()}</span>
+                    <span className="text-lg font-semibold text-purple-400">â¹{it.budget.toLocaleString()}</span>
                     <span className={`px-3 py-1 text-sm font-medium rounded-full ${it.status === 'Completed' ? 'bg-emerald-500/20 text-emerald-400' : 'bg-yellow-500/20 text-yellow-400'}`}>
                       {it.status}
                     </span>
