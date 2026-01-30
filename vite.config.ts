@@ -4,11 +4,6 @@ import path from 'path'
 
 export default defineConfig({
   plugins: [react()],
-  resolve: {
-    alias: {
-      '@': path.resolve(__dirname, './src')
-    }
-  },
   server: {
     allowedHosts: true,
     host: '0.0.0.0',
@@ -22,6 +17,11 @@ export default defineConfig({
       usePolling: true,
       interval: 1000
     }
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
   },
   css: {
     postcss: './postcss.config.js'
